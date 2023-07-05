@@ -1,12 +1,4 @@
-grid = [[2, 5, 0, 0, 3, 0, 9, 0, 1],
-        [0, 1, 0, 0, 0, 4, 0, 0, 0],
-        [4, 0, 7, 0, 0, 0, 2, 0, 8],
-        [0, 0, 5, 2, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 9, 8, 1, 0, 0],
-        [0, 4, 0, 0, 0, 3, 0, 0, 0],
-        [0, 0, 0, 3, 6, 0, 0, 7, 2],
-        [0, 7, 0, 0, 0, 0, 0, 0, 3],
-        [9, 0, 3, 0, 0, 0, 6, 0, 4]]
+import board_generator
 
 
 def print_board(board):
@@ -46,7 +38,7 @@ def valid(board, num, pos):
 
     for i in range(box_y * 3, box_y * 3 + 3):
         for j in range(box_x * 3, box_x * 3 + 3):
-            if board[i][j] == num and (i,j) != pos:
+            if board[i][j] == num and (i, j) != pos:
                 return False
 
     return True
