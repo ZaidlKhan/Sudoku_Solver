@@ -75,6 +75,7 @@ isCheckSolutionRequested = False
 result = 0
 error = 0
 
+
 while run:
     Window.fill((255, 182, 193))
     for event in pygame.event.get():
